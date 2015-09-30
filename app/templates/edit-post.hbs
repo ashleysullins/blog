@@ -1,0 +1,5 @@
+<ul>
+  {{#each model as |post|}}
+    {{edit-post post=post update="update" destroyPost="destroyPost"}}
+    {{/each}}
+</ul>
