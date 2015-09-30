@@ -1,8 +1,8 @@
-<div class="pin">
-  {{#link-to 'post' post.id}}<p><img src="{{post.image}}" alt="{{post.title}}"></p>
-  <h3>{{post.title}}</h3>{{/link-to}}
-  <p>{{post.author}}</p>
-  <p>{{post.date}}</p>
-  {{update-post post=post update="update"}}
-  <button {{action 'delete' post}}>Delete</button>
-</div>
+<tr>
+  <td>{{post.title}}</td>
+  <td>{{post.author}}</td>
+  <td>{{post.category}}</td>
+  <td>{{post.date}}</td>
+  <td><button>Update</button></td>
+  <td><button {{action 'delete' post}}>Delete</button></td>
+</tr>
