@@ -1,8 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewPost: false,
+  contentHeight: 200,
+  postContent: "Some initial contents go here. Lorem Ipsum is simply dummy text of the printing.",
+  editingDisabled: false,
+
   actions: {
+    changeHeight(someObject) {
+      var height = someObject.doSomeCalculationToGetHeight();
+       this.set('contentHeight', height)
+    },
+
     save() {
       var params = {
         author: this.get('author'),
@@ -12,8 +20,7 @@ export default Ember.Component.extend({
         image: this.get('image'),
         content: this.get('content'),
       };
-      this.set('addNewStory', false),
-        this.sendAction('save', params);
-      }
+      this.sendAction('save', params);
+    }
   }
 });
