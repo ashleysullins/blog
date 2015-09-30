@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   contentHeight: 200,
-  postContent: "Some initial contents go here. Lorem Ipsum is simply dummy text of the printing.",
+  postContent: "",
   editingDisabled: false,
 
   actions: {
@@ -13,12 +13,12 @@ export default Ember.Component.extend({
 
     save() {
       var params = {
-        author: this.get('author'),
-        date: this.get('date'),
-        category: this.get('category'),
-        title: this.get('title'),
-        image: this.get('image'),
-        content: this.get('content'),
+        author: this.get('author') ? this.get('author') : "",
+        date: this.get('date') ? this.get('date') : "",
+        category: this.get('category') ? this.get('category') : "",
+        title: this.get('title') ? this.get('title') : "",
+        image: this.get('image') ? this.get('image') : "",
+        content: this.get('content') ? this.get('content') : "",
       };
       this.sendAction('save', params);
     }
