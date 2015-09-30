@@ -1,0 +1,16 @@
+{ "posts": [{
+  "author": "Diana Holland and Ashley Sullins",
+  "date": "9/30/15",
+  "category": "how-to",
+  "title": "Getting Started with Ember",
+  "image": "http://www.pubnub.com/blog/wp-content/uploads/2014/09/tomster-under-construction.png",
+  "content": "We love Ember. Here are some great tips and tricks to get your first ember app up and running:"
+  }, {
+  "author": "Diana Holland and Ashley Sullins",
+  "date": "10/2/15",
+  "category": "Women in Tech",
+  "title": "Grace Hopper: First Female Computer Programmer ",
+  "image": "http://www.newyorker.com/wp-content/uploads/2015/04/Vara-Women-Code-1200.jpg",
+  "content": "Ever wonder who came up with the term bug for when software doesn't work the way it was intended? The term was coined by Grace Hopper, one of the first female engineers in the industry."
+  }]
+}
