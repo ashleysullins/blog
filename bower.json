@@ -14,6 +14,7 @@
     "qunit": "~1.18.0",
     "ember-simple-auth": "0.8.0",
     "firebase": "^2.1.0",
-    "bootstrap": "~3.3.2"
+    "bootstrap": "~3.3.2",
+    "summernote": "~0.6.1"
   }
 }
