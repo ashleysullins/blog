@@ -45,3 +45,13 @@ li {
   margin: 0;
   padding: 15px;
 }
+
+#plus {
+  background-image: url('plus.ico');
+  height: 31px;
+  width: 20px;}
+
+#plus:hover {
+  background-image: url('plus.ico');
+  height: 31px;
+  width: 20px;}
