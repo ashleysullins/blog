@@ -1,0 +1,24 @@
+{{#if addComment}}
+  <h1>Some thoughts and opinions</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          {{input value=name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          {{input value=email id="email"}}
+        </div>
+
+        <div class="form-group">
+          <label for="text">What do you think?</label>
+          {{input value=text id="text"}}
+        </div>
+        <button {{action 'saveComment'}}>Go</button>
+      </form>
+    </div>
+{{else}}
+  <button {{action 'addCommentForm'}}>Comment</button>
+{{/if}}
