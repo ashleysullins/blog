@@ -1,5 +1,15 @@
-<ul>
+<table class="table table-striped">
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Categories</th>
+    <th>Date</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+
   {{#each model as |post|}}
-    {{edit-post post=post update="update" destroyPost="destroyPost"}}
+    {{edit-post post=post update="update" destroyPost="destroyPost" tagName=""}}
     {{/each}}
-</ul>
+
+</table>
