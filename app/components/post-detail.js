@@ -5,6 +5,9 @@ export default Ember.Component.extend({
   saveComment(params) {
     this.sendAction('saveComment', params);
   },
+  update(comment,params) {
+    this.sendAction('update', comment, params);
+  },
   deleteOKAY(comment) {
     if(confirm('Are you super sure??')) {
       this.sendAction('deleteComment', comment);
