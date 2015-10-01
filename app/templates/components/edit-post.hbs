@@ -3,6 +3,6 @@
   <td>{{post.author}}</td>
   <td>{{post.category}}</td>
   <td>{{post.date}}</td>
-  <td><button>Update</button></td>
+  <td><button>{{#link-to 'update-post' post.id}}Update{{/link-to}}</button></td>
   <td><button {{action 'delete' post}}>Delete</button></td>
 </tr>
