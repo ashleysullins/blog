@@ -14,7 +14,8 @@
 
 <ul>
   {{#each post.comments as |comment|}}
-    <li>Comment: {{comment.text}}<p>Name: {{comment.name}} - Email: {{comment.email}}</p></li>
+    <li>Comment: {{comment.text}}<p>Name: {{comment.name}} - Email: {{comment.email}}</p>
+    <button {{action 'deleteOKAY' comment}}>Delete</button></li>
   {{/each}}
 </ul>
 
