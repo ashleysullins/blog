@@ -12,6 +12,10 @@
   <h5>Tags: {{post.category}}</h5>
 </div>
 
-{{add-comment saveComment="saveComment" post=post}}
+<ul>
+  {{#each post.comments as |comment|}}
+    <li>Comment: {{comment.text}}<p>Name: {{comment.name}} - Email: {{comment.email}}</p></li>
+  {{/each}}
+</ul>
 
-{{comment.name}}
+{{add-comment saveComment="saveComment" post=post}}
