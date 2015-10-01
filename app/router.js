@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('post', {path: '/post/:post_id'});
   this.route('add-post');
   this.route('edit-post');
+  this.route('update-post', {path: '/update/:post_id'});
 });
 
 export default Router;
