@@ -16,9 +16,9 @@
           {{input value=text id="text" placeholder=comment.text}}
         </div>
 
-        <button {{action 'update' comment}}>Save</button>
+        <button class="btn btn-default" {{action 'update' comment}}>Save</button>
       </form>
     </div>
 {{else}}
-    <button {{action 'updateCommentForm'}}>Update</button>
+    <button class="btn btn-default" {{action 'updateCommentForm'}}><span class="glyphicon glyphicon-plus"></span></button>
 {{/if}}

@@ -69,3 +69,13 @@ li {
 .post {
   width: 60%;
 }
+
+.background {
+  background-color: #FFF4FF;}
+
+.navbar-default {
+  background: -webkit-linear-gradient(left top, #FFFFFF , #E2E2E2); /* Safari*/
+  background: -o-linear-gradient(bottom right, #FFFFFF, #E2E2E2); /* Opera*/
+  background: -moz-linear-gradient(bottom right, #FFFFFF, #E2E2E2); /* Firefox*/
+  background: linear-gradient(to bottom right, #FFFFFF , #E2E2E2);
+}

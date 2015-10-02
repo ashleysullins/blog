@@ -16,9 +16,10 @@
           <label for="text">What do you think?</label>
           {{input value=text id="text"}}
         </div>
-        <button {{action 'saveComment'}}>Go</button>
+        <button class="btn btn-default" {{action 'saveComment'}}>Go</button>
       </form>
     </div>
 {{else}}
-  <button {{action 'addCommentForm'}}>Comment</button>
+  <button class="btn btn-primary" {{action 'addCommentForm'}}>Add comment</button>
+  <hr>
 {{/if}}

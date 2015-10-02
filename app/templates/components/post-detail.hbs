@@ -12,13 +12,13 @@
   <h5>Tags: {{post.category}}</h5>
 </div>
 
+{{add-comment saveComment="saveComment" post=post}}
+
 <ul>
   {{#each post.comments as |comment|}}
     <li>Comment: {{comment.text}}<p>Name: {{comment.name}} - Email: {{comment.email}}</p>
     <p>{{update-comment comment=comment update="update"}}
-    <button {{action 'deleteOKAY' comment}}>Delete</button></p>
+      <button class="btn btn-default" {{action 'deleteOKAY' comment}}><span class="glyphicon glyphicon-trash"></span></button></p>
     </li>
   {{/each}}
 </ul>
-
-{{add-comment saveComment="saveComment" post=post}}
